@@ -13,7 +13,6 @@ while True:
     stock = get_history(symbol=user_input,
                         start=datetime.date(month_before.year,month_before.month,month_before.day), 
                         end=datetime.date(now.today().year,now.today().month,now.today().day))
-    print(stock)
     HI_values = []
     LO_values = []
     CL_values = []
