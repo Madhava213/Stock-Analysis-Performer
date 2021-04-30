@@ -7,7 +7,7 @@ now = datetime.datetime.now().date()
 month_before = now + dateutil.relativedelta.relativedelta(months=-1)
 
 while True:
-    user_input = input("Enter something:")
+    user_input = input("Enter Symbol of a stock (or enter 'q' to quit) : ")
     if user_input == "q":
         break
     stock = get_history(symbol=user_input,
